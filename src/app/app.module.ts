@@ -8,6 +8,7 @@ import { NationBrowserComponent } from './components/nation-browser/nation-brows
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { NationInfoService } from './services/nation-info.service';
 import { NationSummaryComponent } from './components/nation-summary/nation-summary.component';
+import { PoliticalSummaryComponent } from './components/nation-summary/political-summary/political-summary.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { NationSummaryComponent } from './components/nation-summary/nation-summa
     HomepageComponent,
     NationBrowserComponent,
     NavbarComponent,
-    NationSummaryComponent
+    NationSummaryComponent,
+    PoliticalSummaryComponent
   ],
   imports: [
     BrowserModule,

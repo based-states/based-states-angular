@@ -1,0 +1,14 @@
+<p class="font-weight-bold">
+    <span [ngStyle]="politicalStyles">
+        {{politicalDesc}}:
+    </span>
+    ( 
+    <span [ngStyle]="socialStyles">
+        {{economicDesc}}
+    </span>
+    | 
+    <span [ngStyle]="economicStyles">
+        {{socialDesc}}
+    </span>
+    )
+</p>
