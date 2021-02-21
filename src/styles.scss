@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "assets/variables";
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "assets/bootswatch";
+
+/* Position child elements relative to this element */
+.flag-box {
+    position: relative;
+  }
+  
+  /* Create a pseudo element that uses padding-bottom to take up space */
+  .flag-box::after {
+    display: block;
+    content: "";
+    /* 16:9 aspect ratio */
+    padding-bottom: 60%;
+  }
+  
+  /* Image is positioned absolutely relative to the parent element */
+  .flag-box img {
+    /* Image should match parent box size */
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
